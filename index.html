@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body
+    class="bg-veryDarkBlue text-white h-full m-0 p-0 font-roboto"
+  >
+  <div class="relative w-screen h-screen">
+    <div
+      class="absolute inset-0 bg-fixed bg-center bg-cover opacity-5 z-0"
+      style="background-image: url('./assets/1483216.jpg')"
+    >
+      <!-- empty div for background image, it is positioned absolutely and has a lower z-index -->
+    </div>
+
+    <div class="relative pt-10 z-10">
+      <!-- Social -->
+      <div class="flex justify-between md:justify-end items-center px-10 pb-10 space-x-3">
+        <div>
+          <a href="#">
+            <img
+              src="./assets/twitter.svg"
+              alt=""
+              class="p-2 rounded-full ficon w-10 hover:bg-darkGrayishRed transition-all duration-500 ease-in-out transform md:w-16"
+            />
+          </a>
+        </div>
+        <div
+          class="flex items-center justify-center md:space-x-10 md:absolute top-14 right-32 text-xs md:text-xl"
+        >
+          <a
+            href="#"
+            class="hover:text-darkGrayishRed transition-all duration-500 ease-in-out transform "
+            >Support Me</a
+          >
+        </div>
+      </div>
+      <!-- HEADER -->
+      <header
+        class="container mx-auto px-6 text-center h-40 md:h-20 z-10 md:mt-24"
+      >
+        <!-- Menu -->
+        <div
+          class="text-5xl leading font-bold text-center mb-6 md:mb-0 xl:text-8xl select-none"
+        >
+          DBD ULTIMATE BRAVERY
+        </div>
+      </header>
+
+      <!-- TOP SECTION -->
+      <section
+        id="top-section"
+        class="relative z-10 w-screen h-full xl:flex items-center xl:mt-96"
+      >
+        <div class="container mx-auto px-6 text-center pb-52 relative z-10">
+          <h1 id="firstMessage"
+            class=" max-w-4xl mx-auto text-3xl mt-14 xl:text-7xl select-none animate-fadeInOut opacity-0"
+          >
+            How brave are you?
+          </h1>
+
+          <!-- <button
+        class="p-3 rounded-xl w-52 bg-darkGrayishRed hover:scale-110 transition-all ease-in-out"
+      > -->
+
+          <div class="flex items-center justify-center">
+            <img id="srv"
+              class="promptBtn w-1/2 hover:scale-125 transition-all ease-in-out cursor-pointer active:scale-110"
+              src="./assets/ChallengeIcon_survivor.webp"
+              alt="Survivor button"
+            />
+
+            <img id="klr"
+              class="promptBtn w-1/2 hover:scale-125 transition-all ease-in-out cursor-pointer active:scale-110"
+              src="./assets/ChallengeIcon_killer.webp"
+              alt="Survivor button"
+            />
+          </div>
+          <!-- </button> -->
+        </div>
+      </section>
+    </div>
+  </div>
+    
+  </body>
+    
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
