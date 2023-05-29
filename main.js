@@ -1,5 +1,11 @@
 import './style.css';
 
+const global = {
+  api: {
+    apiUrl: 'https://dbd.tricky.lol/api/',
+  },
+};
+
 function titlesFadeInOut() {
   return new Promise((resolve) => {
     // Fade in first message
@@ -47,9 +53,32 @@ async function imgPromptAnimation() {
   });
 }
 
+async function displayPerks() {
+  const results = await fetchAPIData('randomperks?role=survivor');
+
+  console.log(results);
+}
+
+// Fetch API Data
+async function fetchAPIData(endpoint) {
+  const API_URL = global.api.apiUrl;
+
+  // showSpinner();
+
+  const response = await fetch(`${API_URL}${endpoint}`);
+
+  const data = await response.json();
+
+  // hideSpinner();
+
+  return data;
+}
+
 function init() {
   titlesFadeInOut();
   imgPromptAnimation();
 }
 
 document.addEventListener('DOMContentLoaded', init);
+
+displayPerks();

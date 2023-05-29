@@ -11,7 +11,7 @@
     <title>Vite App</title>
   </head>
   <body
-    class="bg-veryDarkBlue text-white h-full m-0 p-0 font-roboto"
+    class="bg-veryDarkBlue text-white h-full m-0 p-0 font-roboto "
   >
   <div class="relative w-screen h-screen">
     <div
@@ -49,7 +49,7 @@
       >
         <!-- Menu -->
         <div
-          class="text-5xl text-center mb-6 md:mb-0 xl:text-8xl select-none"
+          class="text-5xl text-center mb-6 md:mb-0 xl:text-6xl select-none"
         >
           DBD ULTIMATE BRAVERY
         </div>
@@ -58,11 +58,11 @@
       <!-- TOP SECTION -->
       <section
         id="top-section"
-        class="relative z-10 w-screen h-full xl:flex items-center xl:mt-96"
+        class="relative z-10 w-screen h-full sm:flex sm:flex-col items-center xl:mt-8 container mx-auto pb-24"
       >
-        <div class="container mx-auto px-6 text-center pb-52 relative z-10">
+        <div class="mx-auto px-6 text-center pb-24 relative z-10">
           <h1 id="firstMessage"
-            class=" max-w-4xl mx-auto text-3xl mt-14 xl:text-7xl select-none animate-fadeInOut opacity-0"
+            class=" max-w-4xl mx-auto text-3xl mt-14 xl:text-4xl select-none animate-fadeInOut opacity-0"
           >
             How brave are you?
           </h1>
@@ -73,22 +73,48 @@
 
           <div class="flex items-center justify-center">
             <img id="srv"
-              class="promptBtn w-1/2 hover:scale-125 transition-all ease-in-out cursor-pointer active:scale-110"
+              class="promptBtn w-52 hover:scale-125 transition-all ease-in-out cursor-pointer active:scale-110"
               src="./assets/ChallengeIcon_survivor.webp"
               alt="Survivor button"
             />
 
             <img id="klr"
-              class="promptBtn w-1/2 hover:scale-125 transition-all ease-in-out cursor-pointer active:scale-110"
+              class="promptBtn w-52 hover:scale-125 transition-all ease-in-out cursor-pointer active:scale-110"
               src="./assets/ChallengeIcon_killer.webp"
               alt="Survivor button"
             />
           </div>
           <!-- </button> -->
         </div>
+
+        <!-- PERKS -->
+        <div id="perks" class="mx-auto px-6 text-center relative z-10">
+          <div class="grid grid-cols-2 gap-4 md:grid-cols-4 sm:grid-cols-2">
+            <div class="flex flex-col items-center justify-center">
+              <img src="./assets/IconPerks_bamboozle.webp" alt="Image 1" class="h-32 object-cover">
+              <p class="mt-2">Title 1</p>
+            </div>
+            <div class="flex flex-col items-center justify-center">
+              <img src="./assets/IconPerks_callOfBrine.webp" alt="Image 2" class="h-32 object-cover">
+              <p class="mt-2">Title 2</p>
+            </div>
+            <div class="flex flex-col items-center justify-center">
+              <img src="./assets/IconPerks_dissolution.webp" alt="Image 3" class="h-32 object-cover">
+              <p class="mt-2">Title 3</p>
+            </div>
+            <div class="flex flex-col items-center justify-center">
+              <img src="./assets/IconPerks_fireUp.webp" alt="Image 4" class="h-32 object-cover">
+              <p class="mt-2">Title 4</p>
+            </div>
+          </div>
+          
+    
+        </div>
       </section>
     </div>
   </div>
+
+
     
   </body>
     
